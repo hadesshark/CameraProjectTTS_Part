@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
                 if (resultCode == RESULT_OK) {
                     List<String> list = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                     option = list.get(0);
+                    tvShow.setText(option);
                 }
                 break;
         }
